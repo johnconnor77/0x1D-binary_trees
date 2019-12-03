@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/johnconnor/Downloads/clion-2019.3/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/eltueto/Downloads/CLion-2019.2.4/clion-2019.2.4/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/johnconnor/Downloads/clion-2019.3/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/eltueto/Downloads/CLion-2019.2.4/clion-2019.2.4/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/johnconnor/Documents/Holberton/holbertonschool-low_level_programming/0x1D-binary_trees
+CMAKE_SOURCE_DIR = /home/eltueto/Documents/0x1D-binary_trees
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/johnconnor/Documents/Holberton/holbertonschool-low_level_programming/0x1D-binary_trees/cmake-build-debug
+CMAKE_BINARY_DIR = /home/eltueto/Documents/0x1D-binary_trees/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/johnconnor/Documents/Holberton/holbertonschool-low_leve
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/johnconnor/Downloads/clion-2019.3/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/eltueto/Downloads/CLion-2019.2.4/clion-2019.2.4/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/johnconnor/Downloads/clion-2019.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/eltueto/Downloads/CLion-2019.2.4/clion-2019.2.4/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johnconnor/Documents/Holberton/holbertonschool-low_level_programming/0x1D-binary_trees/cmake-build-debug/CMakeFiles /home/johnconnor/Documents/Holberton/holbertonschool-low_level_programming/0x1D-binary_trees/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eltueto/Documents/0x1D-binary_trees/cmake-build-debug/CMakeFiles /home/eltueto/Documents/0x1D-binary_trees/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johnconnor/Documents/Holberton/holbertonschool-low_level_programming/0x1D-binary_trees/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eltueto/Documents/0x1D-binary_trees/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -110,6 +110,127 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named main
+
+# Build rule for target.
+main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+0-binary_tree_node.o: 0-binary_tree_node.c.o
+
+.PHONY : 0-binary_tree_node.o
+
+# target to build an object file
+0-binary_tree_node.c.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/0-binary_tree_node.c.o
+.PHONY : 0-binary_tree_node.c.o
+
+0-binary_tree_node.i: 0-binary_tree_node.c.i
+
+.PHONY : 0-binary_tree_node.i
+
+# target to preprocess a source file
+0-binary_tree_node.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/0-binary_tree_node.c.i
+.PHONY : 0-binary_tree_node.c.i
+
+0-binary_tree_node.s: 0-binary_tree_node.c.s
+
+.PHONY : 0-binary_tree_node.s
+
+# target to generate assembly for a file
+0-binary_tree_node.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/0-binary_tree_node.c.s
+.PHONY : 0-binary_tree_node.c.s
+
+2-binary_tree_insert_right.o: 2-binary_tree_insert_right.c.o
+
+.PHONY : 2-binary_tree_insert_right.o
+
+# target to build an object file
+2-binary_tree_insert_right.c.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/2-binary_tree_insert_right.c.o
+.PHONY : 2-binary_tree_insert_right.c.o
+
+2-binary_tree_insert_right.i: 2-binary_tree_insert_right.c.i
+
+.PHONY : 2-binary_tree_insert_right.i
+
+# target to preprocess a source file
+2-binary_tree_insert_right.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/2-binary_tree_insert_right.c.i
+.PHONY : 2-binary_tree_insert_right.c.i
+
+2-binary_tree_insert_right.s: 2-binary_tree_insert_right.c.s
+
+.PHONY : 2-binary_tree_insert_right.s
+
+# target to generate assembly for a file
+2-binary_tree_insert_right.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/2-binary_tree_insert_right.c.s
+.PHONY : 2-binary_tree_insert_right.c.s
+
+2-main.o: 2-main.c.o
+
+.PHONY : 2-main.o
+
+# target to build an object file
+2-main.c.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/2-main.c.o
+.PHONY : 2-main.c.o
+
+2-main.i: 2-main.c.i
+
+.PHONY : 2-main.i
+
+# target to preprocess a source file
+2-main.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/2-main.c.i
+.PHONY : 2-main.c.i
+
+2-main.s: 2-main.c.s
+
+.PHONY : 2-main.s
+
+# target to generate assembly for a file
+2-main.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/2-main.c.s
+.PHONY : 2-main.c.s
+
+binary_tree_print.o: binary_tree_print.c.o
+
+.PHONY : binary_tree_print.o
+
+# target to build an object file
+binary_tree_print.c.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/binary_tree_print.c.o
+.PHONY : binary_tree_print.c.o
+
+binary_tree_print.i: binary_tree_print.c.i
+
+.PHONY : binary_tree_print.i
+
+# target to preprocess a source file
+binary_tree_print.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/binary_tree_print.c.i
+.PHONY : binary_tree_print.c.i
+
+binary_tree_print.s: binary_tree_print.c.s
+
+.PHONY : binary_tree_print.s
+
+# target to generate assembly for a file
+binary_tree_print.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/binary_tree_print.c.s
+.PHONY : binary_tree_print.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -117,7 +238,20 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... main"
 	@echo "... edit_cache"
+	@echo "... 0-binary_tree_node.o"
+	@echo "... 0-binary_tree_node.i"
+	@echo "... 0-binary_tree_node.s"
+	@echo "... 2-binary_tree_insert_right.o"
+	@echo "... 2-binary_tree_insert_right.i"
+	@echo "... 2-binary_tree_insert_right.s"
+	@echo "... 2-main.o"
+	@echo "... 2-main.i"
+	@echo "... 2-main.s"
+	@echo "... binary_tree_print.o"
+	@echo "... binary_tree_print.i"
+	@echo "... binary_tree_print.s"
 .PHONY : help
 
 
